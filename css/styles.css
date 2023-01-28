@@ -1,0 +1,34 @@
+
+html, body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.navigation {
+    height: 92px; 
+    width: 97%;
+    background: #475458;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px;
+    color: white;
+}
+.primary-btn{
+    background: #BF5700;
+    border-radius: 16px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 4px;
+    outline: inherit;
+}
+.header-callout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-callout > span:first-child{
+    font-size: 44px; 
+    letter-spacing: 8px;
+}
