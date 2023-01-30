@@ -4,25 +4,32 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-.navigation {
-    height: 92px; 
-    width: 97%;
+header, footer {
+    height: 92px;
     background: #475458;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 6px 16px;
+    max-width: 100%;
     color: white;
 }
+
 .primary-btn{
     background: #BF5700;
     border-radius: 16px;
     color: white;
     font-weight: bold;
     padding: 8px 4px;
-    outline: inherit;
+    outline: 0px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
-.header-callout {
+.btn-wide {
+    width: 230px;
+}
+#header-callout {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,4 +38,57 @@ html, body {
 .header-callout > span:first-child{
     font-size: 44px; 
     letter-spacing: 8px;
+}
+
+main {
+    background: url('../images/mainimage.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 82vh;
+    color:  white;
+    padding: 20px 60px;
+}
+main h1{
+    font-size: 60px;
+}
+#main-description {
+    width: 524px;
+    font-size: 20px;
+}
+#main-callout {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 48vh;
+}
+
+footer {
+    padding: 0px 80px;
+    font-size: 20px;
+}
+
+#next-ride-counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 287px;
+}
+
+#next-ride-counter-countdown {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+#next-ride-counter-countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.next-ride-counter span:first-child {
+    font-size: 30px;
+    font-weight: bold;
 }
